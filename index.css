@@ -876,7 +876,8 @@ a:focus{
 .project-card > img{
   width: inherit;
   height: 150px;
-  border-radius: inherit;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   object-fit: cover;
 }
 
