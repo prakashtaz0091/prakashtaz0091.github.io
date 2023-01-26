@@ -16,8 +16,18 @@ sidebarShowBtn.addEventListener("click", () => {
 
 
 
-const addAppointmentBtn = document.getElementById("bottom-nav")
-addAppointmentBtn.addEventListener("click", () => {
 
-})
+let noOfProjectsHTML = document.getElementById("noOfProjects")
+
+const noOfProjects = document.getElementsByClassName("project-card").length
+
+noOfProjectsHTML.innerText = noOfProjects
+
+
+let noOfGainsHTML = document.getElementById("noOfGains")
+
+const noOfGains = document.getElementsByClassName("gains-cards").children.length
+
+noOfGainsHTML.innerText = noOfGains
+
 
