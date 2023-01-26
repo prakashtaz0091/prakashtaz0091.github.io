@@ -1048,6 +1048,36 @@ a:focus {
   background-color: var(--backgroundColor);
   padding: 20px 0;
 }
+#to-top-btn{
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+}
+
+#to-top-btn i{
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  padding-left: 3.5px;
+  color: var(--borderColor);
+  border-radius: 50%;
+  box-shadow: 0 0 5px 2px white;
+
+}
+
+#to-top-btn i:hover{
+  color: yellow;
+ 
+}
+
+.display-none{
+  display: none;
+}
+
+.display-block{
+  display: block;
+}
+
 
 /* footer ends*/
 
@@ -1147,7 +1177,7 @@ a:focus {
 }
 
 
-@media (min-width:500px) {
+@media (min-width:400px) {
   .project-card {
     height: 300px;
     width: 350px;

@@ -1,3 +1,16 @@
+let goToTopBtn = document.getElementById("to-top-btn")
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>1400){
+        goToTopBtn.classList.remove("display-none")
+        goToTopBtn.classList.add("display-block")
+    }else{
+        goToTopBtn.classList.remove("display-block")
+        goToTopBtn.classList.add("display-none")
+
+    }
+})
+
+
 let sidebarCloseBtn = document.getElementById("sidebar-close-btn")
 let sidebar = document.getElementById("sidebar")
 
@@ -15,7 +28,10 @@ sidebarShowBtn.addEventListener("click", () => {
 })
 
 
-
+let contactLink = document.getElementById("contact-link")
+contactLink.addEventListener("click",()=>{
+    sidebarCloseBtn.click()
+})
 
 let noOfProjectsHTML = document.getElementById("noOfProjects")
 
