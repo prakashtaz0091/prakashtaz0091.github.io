@@ -47,5 +47,12 @@ const noOfGains = document.getElementById("gains-cards").children.length
 noOfGainsHTML.innerText = noOfGains
 
 
+let noOfSkillsHTML = document.getElementById("noOfSkills")
+
+const noOfSkills = document.getElementById("skills-cards").children.length
+
+noOfSkillsHTML.innerText = noOfSkills
+
+
 
 
