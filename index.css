@@ -907,6 +907,7 @@ details{
   position: relative;
   display: inline-block;
 
+
 }
 
 .tech-heading::before {
@@ -1043,6 +1044,218 @@ details{
 
 
 /* gains-cards ends */
+
+
+/* skills-section */
+
+.skills{
+  color: aqua;
+}
+
+.skills-cards{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.progressbar {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin: 1em;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressbar__svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.progressbar__text{
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.progressbar__svg-circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke: white;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.shadow-html {
+  filter: drop-shadow(0 0 5px #ff6633);
+}
+
+.shadow-css {
+  filter: drop-shadow(0 0 5px #33bbff);
+}
+.shadow-js {
+  filter: drop-shadow(0 0 5px #ff33ff);
+}
+.shadow-react {
+  filter: drop-shadow(0 0 5px #ffff33);
+}
+.shadow-django {
+  filter: drop-shadow(0 0 5px #3377ff);
+}
+.shadow-python {
+  filter: drop-shadow(0 0 5px #55ff33);
+}
+.shadow-bootstrap {
+  filter: drop-shadow(0 0 5px #33ffff);
+}
+.shadow-mui {
+  filter: drop-shadow(0 0 5px #ff3333);
+}
+.shadow-tailwind-css {
+  filter: drop-shadow(0 0 5px #33ff88);
+}
+
+
+.circle-html {
+  -webkit-animation: anim_circle-html 1s ease-in-out forwards;
+          animation: anim_circle-html 1s ease-in-out forwards;
+}
+
+.circle-css {
+  -webkit-animation: anim_circle-css 1s ease-in-out forwards;
+          animation: anim_circle-css 1s ease-in-out forwards;
+}
+.circle-js {
+  -webkit-animation: anim_circle-js 1s ease-in-out forwards;
+          animation: anim_circle-js 1s ease-in-out forwards;
+}
+.circle-react {
+  -webkit-animation: anim_circle-react 1s ease-in-out forwards;
+          animation: anim_circle-react 1s ease-in-out forwards;
+}
+.circle-django {
+  -webkit-animation: anim_circle-django 1s ease-in-out forwards;
+          animation: anim_circle-django 1s ease-in-out forwards;
+}
+.circle-python {
+  -webkit-animation: anim_circle-python 1s ease-in-out forwards;
+          animation: anim_circle-python 1s ease-in-out forwards;
+}
+.circle-bootstrap {
+  -webkit-animation: anim_circle-bootstrap 1s ease-in-out forwards;
+          animation: anim_circle-bootstrap 1s ease-in-out forwards;
+}
+.circle-mui {
+  -webkit-animation: anim_circle-mui 1s ease-in-out forwards;
+          animation: anim_circle-mui 1s ease-in-out forwards;
+}
+.circle-tailwind-css {
+  -webkit-animation: anim_circle-tailwind-css 1s ease-in-out forwards;
+          animation: anim_circle-tailwind-css 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+@-webkit-keyframes anim_circle-css {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+@keyframes anim_circle-css {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+@-webkit-keyframes anim_circle-js {
+  to {
+    stroke-dashoffset: 150;
+  }
+}
+@keyframes anim_circle-js {
+  to {
+    stroke-dashoffset: 150;
+  }
+}
+@-webkit-keyframes anim_circle-react {
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+@keyframes anim_circle-react {
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+@-webkit-keyframes anim_circle-django {
+  to {
+    stroke-dashoffset: 150;
+  }
+}
+@keyframes anim_circle-django {
+  to {
+    stroke-dashoffset: 150;
+  }
+}
+@-webkit-keyframes anim_circle-python {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+@keyframes anim_circle-python {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+@-webkit-keyframes anim_circle-bootstrap {
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+@keyframes anim_circle-bootstrap {
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+@-webkit-keyframes anim_circle-mui {
+  to {
+    stroke-dashoffset: 60;
+  }
+}
+@keyframes anim_circle-mui {
+  to {
+    stroke-dashoffset: 60;
+  }
+}
+@-webkit-keyframes anim_circle-tailwind-css {
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+@keyframes anim_circle-tailwind-css {
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+/* skills-section ends */
+
+
 
 
 

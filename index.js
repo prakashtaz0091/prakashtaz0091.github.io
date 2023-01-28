@@ -42,8 +42,10 @@ noOfProjectsHTML.innerText = noOfProjects
 
 let noOfGainsHTML = document.getElementById("noOfGains")
 
-const noOfGains = document.getElementsByClassName("gains-cards").children.length
+const noOfGains = document.getElementById("gains-cards").children.length
 
 noOfGainsHTML.innerText = noOfGains
+
+
 
 
