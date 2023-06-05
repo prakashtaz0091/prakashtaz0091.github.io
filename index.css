@@ -1415,3 +1415,28 @@ details{
 
 
 /* custom media queries ends */
+
+
+/* art section  */
+.art-card{
+  height: 300px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 8px;
+  animation: 1s ease-in-out;
+}
+
+.art-card > img{
+  height: 284px;
+  border-radius: 8px;
+}
+
+.art-card > img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 3px white;
+
+  
+}
+
+
+/* art section ends */

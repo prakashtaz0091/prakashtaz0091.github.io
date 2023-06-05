@@ -53,6 +53,11 @@ const noOfSkills = document.getElementById("skills-cards").children.length
 
 noOfSkillsHTML.innerText = noOfSkills
 
+let noOfArtsHTML = document.getElementById("noOfArts")
+
+const noOfArts = document.getElementById("art-cards").children.length
+
+noOfArtsHTML.innerText = noOfArts
 
 
 
