@@ -1429,6 +1429,7 @@ details{
 .art-card > img{
   height: 284px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .art-card > img:hover{
