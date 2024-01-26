@@ -1,346 +1,408 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Prakash Tajpuriya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Share+Tech+Mono&display=swap"
-    rel="stylesheet">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <title>Prakash Tajpuriya</title>
-</head>
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-<body>
-  <div id="particles-js">
-  </div>
-  <!-- sidebar -->
-  <div class="container sidebar sidebar-collapse" id="sidebar">
-    <div class="sidebar-top">
-      <button class="btn-close mt-3" id="sidebar-close-btn"></button>
-      <div id="sidebar-show-btn" title="open sidebar">
-        <div class="avatar glow">
-          <img src="../profile-pic.jpeg" alt="not found">
-        </div>
-      </div>
-    </div>
-    <div class=" user-info mb-4">
-      <div class="avatar glow">
-        <img src="../profile-pic.jpeg" alt="not found">
-      </div>
-      <h4>PRAKASH TAJPURIYA</h4>
-    </div>
-    <ul class="sidebar-items">
-      <li class="sidebar-item">
-        <i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp; &nbsp; <a href="#footer"
-          id="contact-link">Contact</a>
-      </li>
-      <li class="sidebar-item">
-        <i class="fa fa-user-secret" aria-hidden="true"></i> &nbsp; &nbsp; <a href="./files/cv.pdf" download> About
-          Me</a>
-      </li>
-    </ul>
-    <br>
-    <div class="container-custom">
-      <div class="btn"><a href="https://www.facebook.com/alex.tazpuriya">Facebook</a></div>
-      <div class="btn"><a href="https://github.com/prakashtaz0091" target="_blank">Github</a></div>
-      <div class="btn"><a href="#">Instagram</a></div>
-    </div>
-    <div id="to-top-btn">
-    </div>
-  </div>
-  <!-- sidebar ends-->
-  <div class="main">
-    <div class="first-section" id="first-section">
-      <div class="col-lg-4 col-md-12 intro sm-screen-center d-flex justify-content-center">
-        <div class="card-wrapper">
-          <div class="top-design"></div>
-          <div class="top-corner" title="clip path used"></div>
-          <div class="card-img">
-            <img src="../profile-pic2.jpeg" alt="not found">
-          </div>
-          <div class="upper-tri"></div>
-          <div class="lower-tri"></div>
-          <div class="card-body" style="padding-top: 0;">
-            <div class="desc"> I am <strong>Prakash Tajpuriya</strong>, currently pursing my Bachelor's degree from
-              <strong><a href="https://mechicampus.edu.np/" style="text-decoration: none; color: inherit;"
-                  target="_blank">Mechi Multiple Campus</a></strong> of <i>Science in Computer Science and Information
-                Technology.</i> <br> Actively working on projects and seeking for <strong>remote internships</strong> as
-              a <strong>Front-end</strong> as well as <strong>Back-end</strong> developer. </div>
-          </div>
-          <div class="footer-line"></div>
-          <div class="lower-left-bottom"></div>
-          <div class="lower-right-bottom"> PRAKASH &nbsp; TAJPURIYA <br> Web-Developer </div>
-        </div>
-      </div>
-      <div class=" col-lg-7 col-md-12 d-flex flex-column">
-        <div class="stats d-flex flex-md-column-reverse justify-content-between ">
-          <div class="d-flex flex-wrap gap-3 justify-content-center align-items-center">
-            <a href="#projects">
-              <div class="stat-card">
-                <h4>PROJECTS</h4>
-                <h1 id="noOfProjects"></h1>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   
+
+    <div id="colorlib-page">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="colorlib-navbar-brand">
+                <a class="colorlib-logo" href="index.html"
+                  ><span>Al</span><span>ex</span></a
+                >
               </div>
-            </a>
-            <a href="#arts">
-              <div class="stat-card">
-                <h4>ARTS</h4>
-                <h1 id="noOfArts"></h1>
-              </div>
-            </a>
-            <a href="#gains">
-              <div class="stat-card">
-                <h4>GAINS</h4>
-                <h1 id="noOfGains"></h1>
-              </div>
-            </a>
-            <a href="#skills">
-              <div class="stat-card">
-                <h4>SKILLS</h4>
-                <h1 id="noOfSkills"></h1>
-              </div>
-            </a>
-            <div class="stat-card">
-              <h4>CV</h4>
-              <a href="./files/cv.pdf" download>
-                <h1><i class="fa fa-download"></i></h1>
-              </a>
+              <!-- <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"
+                ><i></i
+              ></a> -->
             </div>
           </div>
         </div>
-        <div id="projects" class="projects flex-grow-1 mt-5">
-          <div class="d-flex justify-content-center p-3">
-            <h1 class="tech-heading p-2">PROJECTS</h1>
+      </header>
+      <div id="colorlib-about">
+        <div class="container">
+          <div class="row text-center">
+            <h2 class="bold">About</h2>
           </div>
-          <div class="project-cards d-flex  justify-content-center gap-4 flex-wrap">
-            <div class="project-card">
-              <img src="./images/publicGatherings.png" alt="">
-              <div class="project-card-footer m-2">
-                <h5 class="">Public-Events Site</h3>
-                  <hr>
-                  <p>Django Rest Framework | React | MUI</p>
-                  <div class="d-flex justify-content-between align-items-center m-2">
-                    <div class="btn btn-warning btn-sm">
-                      <a href="https://public-events.netlify.app">Preview</a>
+          <div class="row">
+            <div class="col-md-5 animate-box">
+              <div class="owl-carousel3">
+                <div class="item">
+                  <img
+                    class="img-responsive about-img"
+                    src="images/profile.png"
+                    alt="html5 bootstrap template by colorlib.com"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    class="img-responsive about-img"
+                    src="images/profile-2.jpg"
+                    alt="html5 bootstrap template by colorlib.com"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-push-1 animate-box">
+              <div class="about-desc" id="about-desc">
+                <div class="owl-carousel3">
+                  <div class="item">
+                    <h2><span>Prakash</span><span>Tajpuriya</span></h2>
+                  </div>
+                  <div class="item">
+                    <h2><span>I'm</span><span>A Web Developer</span></h2>
+                  </div>
+                </div>
+                <div class="desc">
+                  <div class="rotate">
+                    <h2 class="heading">About</h2>
+                  </div>
+                  <p>
+                    I serve as a web developer, specializing in back-end
+                    development but also having experience in front-end
+                    technologies. I am currently studying bachelor's degree in
+                    information technology and computer science, and I approach
+                    every project with sincerity and a positive outlook. I am
+                    ready to give value to any internship opportunity with my
+                    talents and passion, as well as my great eye for detail and
+                    friendly nature.
+                  </p>
+                  <p class="colorlib-social-icons">
+                    <a target="_blank"
+                      href="https://github.com/praka
+									shtaz0091"
+                      ><i class="icon-github2"></i
+                    ></a> &nbsp;
+                    <a target="_blank"
+                      href="https://www.facebook.c
+									om/alex.tazpuriya?
+									mibextid=9R9pXO"
+                      ><i class="icon-facebook3"></i
+                    ></a>&nbsp;
+                    <a target="_blank"
+                      href="https://www.linkedin.co
+					m/in/prakash-tajpuriya-
+					7b6663252"
+                      ><i class="icon-linkedin2"></i
+                    ></a>&nbsp;
+                    <a target="_blank" href="https://www.flickr.com/photos/199709049@N04/"
+                      ><i class="">Flickr</i></a
+                    >
+                  </p>
+                  <p>
+                    <a href="#footer" class="btn btn-primary btn-outline"
+                      >Contact Me!</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="colorlib-services">
+        <div class="container">
+          <div class="row text-center">
+            <h2 class="bold">Services</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="services-flex">
+                <div class="one-third">
+                  <div class="row">
+                    <div
+                      class="col-md-12 col-md-offset-0 animate-box intro-heading"
+                    >
+                      <span>My Services</span>
+                      <h2>Here Are Some of My Skills</h2>
                     </div>
-                    <small>Jan 26, 2023</small>
                   </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="./images/prakash-0091.png" alt="">
-              <div class="project-card-footer m-2">
-                <h5 class="">Tech Portfolio design</h3>
-                  <hr>
-                  <p> HTML | CSS</p>
-                  <div class="d-flex justify-content-between align-items-center m-2">
-                    <div class="btn btn-warning btn-sm">
-                      <a href="https://prakash-0091.github.io">Preview</a>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="rotate">
+                        <h2 class="heading">Services</h2>
+                      </div>
                     </div>
-                    <small>Sep 6, 2022</small>
-                  </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="./images/referral.png" alt="">
-              <div class="project-card-footer m-2">
-                <h5 class="">Referral System(demo)</h3>
-                  <hr>
-                  <p>Django | HTML | CSS</p>
-                  <div class="d-flex justify-content-between align-items-center m-2">
-                    <div class="btn btn-warning btn-sm">
-                      <a href="https://prakash0091.pythonanywhere.com/">Preview</a>
+                    <div class="col-md-6">
+                      
+                      <div class="services animate-box">
+                        <h3>1 - Front End Development</h3>
+                        <ul>
+                          <li>React.js / Next.js</li>
+                          <li>JS &amp; Jquery </li>
+                          <li>Bootstrap</li>
+                          <li>Material UI</li>
+                        </ul>
+                      </div>
+					  <div class="services animate-box">
+                        <h3>2 - Cyber Security & Ethical Hacking</h3>
+                        <ul>
+                          <li>MetaSploit Framework</li>
+                          <li>Wrireshark</li>
+                          <li>Social Engineering</li>
+                        </ul>
+                      </div>
                     </div>
-                    <small>Feb 2, 2023</small>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center my-4">
-            <div class="btn btn-success"><a href="https://github.com/prakashtaz0091/">View More</a></div>
-          </div>
-        </div>
-        <div id="arts" class="projects flex-grow-1 mt-5">
-          <div class="d-flex justify-content-center p-3">
-            <h1 class="tech-heading p-2">ARTS</h1>
-          </div>
-          <div id="art-cards" class="art-cards d-flex  justify-content-center gap-4 flex-wrap">
-            <div class="art-card">
-              <img src="./images/art1.jpg" alt="art-piece-1">
-              
-            </div>
-            <div class="art-card">
-              <img src="./images/art2.jpg" alt="art-piece-2">
-              
-            </div>
-            
-            
-          </div>
-          <div class="d-flex justify-content-center my-4">
-            <div class="btn btn-success"><a href="https://www.facebook.com/alex.tazpuriya">View More</a></div>
-          </div>
-        </div>
-        <div class="gains d-flex flex-column align-items-center m-5" id="gains">
-          <div class="d-flex justify-content-center p-3">
-            <h1 class="tech-heading p-2">GAINS</h1>
-          </div>
-          <div class=" d-flex flex-column  d-none d-md-block" id="gains-cards">
-            <div class="d-flex gap-1 my-5 gain-card">
-              <div class="gain-card-img">
-                <a href="./images/12 _Mr. Prakash Tajpuriya.jpg">
-                  <img src="./images/12 _Mr. Prakash Tajpuriya.jpg" alt="">
-                </a>
-              </div>
-              <div class="p-2 d-flex flex-column justify-content-between gain-card-desc ">
-                <div class="title">
-                  <h1>Nationwide Hackathon 20.21</h1>
-                </div>
-                <div class="d-flex flex-column justify-content-between ">
-                  <div class="subtitle">
-                    <p>Province-1 Winner</p>
-                  </div>
-                  <div class="date">
-                    <p>Achievement Date: Jul 13, 2021</p>
+                    <div class="col-md-6">
+                      <div class="services animate-box">
+                        <h3>3 - Back End Development</h3>
+                        <ul>
+                          <li>Django</li>
+                          <li>Node.js</li>
+                          <li>Python</li>
+                          <li>Express.js</li>
+                        </ul>
+                      </div>
+                      <div class="services animate-box">
+                        <h3>4 - Sketch Artist</h3>
+                        <ul>
+                          <li>Portraits</li>
+                          <li>Doodles</li>
+                          <li>Digital Art Startup</li>
+                        </ul>
+                      </div>
+					  
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="gain-card-2 d-flex gap-1 my-5  ">
-              <div class=" px-4 py-2 d-flex flex-column justify-content-between gain-card-desc">
-                <div class="title">
-                  <h1>Ethical Hacking Workshop</h1>
-                </div>
-                <div class="d-flex flex-column justify-content-between ">
-                  <div class="subtitle">
-                    <p>36 hours workshop <br> [ Mechi Multiple Campus ]</p>
-                  </div>
-                  <div class="date">
-                    <p>Achievement Date: Sep 4-9, 2022</p>
-                  </div>
-                </div>
-              </div>
-              <div class="gain-card-img">
-                <a href="./images/ethical hacking.jpg">
-                  <img src="./images/ethical hacking.jpg" alt="">
-                </a>
+                <div
+                  class="one-forth services-img"
+                  style="background-image: url(images/services-img-1.jpg)"
+                ></div>
               </div>
             </div>
           </div>
-          <div class="d-flex flex-column gap-3 align-items-center d-md-none">
-            <div class="image">
-              <a href="./images/12 _Mr. Prakash Tajpuriya.jpg">
-                <img src="./images/12 _Mr. Prakash Tajpuriya.jpg" alt="">
-              </a>
-            </div>
-            <div class="image">
-              <a href="./images/ethical hacking.jpg">
-                <img src="./images/ethical hacking.jpg" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- skills -->
-    <div class="skills" id="skills">
-      <div class="d-flex justify-content-center p-3">
-        <h1 class="tech-heading p-2">SKILLS</h1>
-      </div>
-      <div class="skills-cards" id="skills-cards">
-        <div class="progressbar">
-          <svg class="progressbar__svg">
-            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
-          </svg>
-          <span class="progressbar__text shadow-html">HTML</span>
-        </div>
-        <div class="progressbar">
-          <svg class="progressbar__svg">
-            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-css shadow-css"> </circle>
-          </svg>
-          <span class="progressbar__text shadow-css">CSS</span>
-        </div>
-        <div class="progressbar">
-          <svg class="progressbar__svg">
-            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-js shadow-js"> </circle>
-          </svg>
-          <span class="progressbar__text shadow-js">JS</span>
-        </div>
-        <div class="progressbar">
-          <svg class="progressbar__svg">
-            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-react shadow-react"> </circle>
-          </svg>
-          <span class="progressbar__text shadow-react">React</span>
-        </div>
-        <div class="progressbar">
-          <svg class="progressbar__svg">
-            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-django shadow-django"> </circle>
-          </svg>
-          <span class="progressbar__text shadow-django">Django</span>
-        </div>
-        <div class="progressbar">
-          <svg class="progressbar__svg">
-            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-python shadow-python"> </circle>
-          </svg>
-          <span class="progressbar__text shadow-python">Python</span>
-        </div>
-        <div class="progressbar">
-          <svg class="progressbar__svg">
-            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-bootstrap shadow-bootstrap"> </circle>
-          </svg>
-          <span class="progressbar__text shadow-bootstrap">Bootstrap</span>
-        </div>
-        <div class="progressbar">
-          <svg class="progressbar__svg">
-            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-mui shadow-mui"> </circle>
-          </svg>
-          <span class="progressbar__text shadow-mui">Material UI</span>
-        </div>
-        <div class="progressbar">
-          <svg class="progressbar__svg">
-            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-tailwind-css shadow-tainwind-css"> </circle>
-          </svg>
-          <span class="progressbar__text shadow-tailwind-css">Tailwind CSS</span>
         </div>
       </div>
 
+      <div id="colorlib-blog">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Achievements</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Achievements and Certificates</span>
+						<h2>My Gains</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Gains</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row animate-box" id="certificates">
+					<div class="owl-carousel1">
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a href="#certificates" class="blog-img">
+										<img class="img-responsive" src="images/provathon.jpg" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										
+									</a>
+									<div class="desc">
+										<span class="meta">13, July 2021</span>
+										<h2><a href="#certificates">Provathon 20.21-winner</a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a href="#certificates" class="blog-img">
+										<img class="img-responsive" src="images/reactjs.jpg" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										
+									</a>
+									<div class="desc">
+										<span class="meta">15, June 2023</span>
+										<h2><a href="#certificates">React.js & Github (workshop)</a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a href="#certificates" class="blog-img">
+										<img class="img-responsive" src="images/ethical hacking.jpg" alt="html5 bootstrap by colorlib.com">
+										<div class="overlay"></div>
+										
+									</a>
+									<div class="desc">
+										<span class="meta">9, Sept 2022</span>
+										<h2><a href="#certificates">Cyber Security & Ethical Hacking (workshop) </a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+      <footer>
+        <div id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-pb-sm">
+                <div class="row">
+                  <div class="col-md-10">
+                    <h2>Let's Talk</h2>
+                    <p>
+                      <i class="icon-phone5"></i
+                      > &nbsp;<a href="tel:9824946516">+977 9824946516</a>
+                    </p>
+                    <p>
+                      
+						<i class="icon-mail5"></i
+							> &nbsp;
+						<a href="mailto:code.ing2468@gmail.com"
+                        >code.ing2468@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-pb-sm">
+                <h2>Latest Blog</h2>
+                <div class="f-entry">
+                  <a
+                    href="#"
+                    class="featured-img"
+                    style="background-image: url(images/img-1.jpg)"
+                  ></a>
+                  <div class="desc">
+                    <span>June 10, 2023</span>
+                    <h3><a target="_blank" href="https://prakash0091.hashnode.dev/standardizing-error-messages-in-django-rest-framework-and-json-renderer">Standardizing Error Messages in Django Rest Framework and JSON Renderer</a></h3>
+                  </div>
+                </div>
+                <div class="f-entry">
+                  <a
+                    href="#"
+                    class="featured-img"
+                    style="background-image: url(images/img-2.jpg)"
+                  ></a>
+                  <div class="desc">
+                    <span>June 2, 2023</span>
+                    <h3><a target="_blank" href="https://prakash0091.hashnode.dev/postgresql-setup-with-django-in-ubuntu-2204">PostgreSQL setup with Django in Ubuntu 22.04</a></h3>
+                  </div>
+                </div>
+                <div class="f-entry">
+                  <a
+                    href="#"
+                    class="featured-img"
+                    style="background-image: url(images/img-3.jpg)"
+                  ></a>
+                  <div class="desc">
+                    <span>July 1, 2023</span>
+                    <h3><a target="_blank" href="https://prakash0091.hashnode.dev/resolving-postgresql-setup-issues-in-ubuntu-2204">Resolving PostgreSQL Setup Issues in Ubuntu 22.04</a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-pb-sm">
+                <h2>Download Resume</h2>
+                
+                <div class="subscribe text-center">
+                  <div class="form-group">
+                    
+					<a href="/images/cv.pdf" class="btn btn-primary btn-custom" download="Prakash resume">Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>
+                  &copy;
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved |  <a href="#colorlib-about">Prakash Tajpuriya</a>
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <!-- skills ends-->
 
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
 
-      </div>
-    </div>
-    
-    <div id="footer" class="text-center  footer">
-      <p>copyright@2023 | Prakash Tajpuriya</p>
-      <hr>
-      <div class="d-flex justify-content-center gap-4">
-        <p> Email: code.ing2468@gmail.com <br> Phone : 9746877301 / 9824946516 </p>
-      </div>
-    </div>
-    <div id="to-top-btn" class="">
-      <a href="#first-section">
-        <i class="fa fa-arrow-circle-up" aria-hidden="true">
-        </i>
-      </a>
-    </div>
-  </div>
-  <!-- Optional JavaScript; choose one of the two! -->
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="./index.js"></script>
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
-</body>
-
+    <!-- Main JS (Do not remove) -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
